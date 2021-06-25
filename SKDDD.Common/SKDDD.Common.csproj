@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <PackageTags>Design,Architecture,Patterns</PackageTags>
+    <PackageReleaseNotes>Initial commit.</PackageReleaseNotes>
+    <Tags>Cqrs,IoC,.Net,result-pattern, DDD, dependency-injection, Ninject, CastleWindsor, Autofac</Tags>
+    <ApplicationVersion>1.0.0%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net472;net5.0</TargetFrameworks>
+    <Authors>Samir Kharchi</Authors>
+    <Version>1.0.0</Version>
+    <Description>Contains common patterns for architectural concerns.</Description>
+    <Owners>Samir Kharchi</Owners>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Production\Cqrs\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac">
+      <Version>6.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Castle.Windsor">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Ninject">
+      <Version>3.3.4</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>
